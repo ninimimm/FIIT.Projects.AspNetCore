@@ -1,0 +1,12 @@
+﻿services:
+  api:
+    image: api
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+
+  telegrambot:
+    image: telegrambot
+    build:
+      context: .
+      dockerfile: TelegramBot/Dockerfile
